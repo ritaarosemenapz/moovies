@@ -1,0 +1,239 @@
+:root {
+  --dark: rgb(15, 15, 15);
+  --accent: #a80101;
+  --gray: #2a2e31;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #fff;
+  background-color: var(--dark);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* ^ TYPOGRAPHY */
+
+h2 {
+  font-size: 2rem;
+}
+
+/* ^ HEADER */
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: #090303a7;
+}
+
+.hide {
+  display: none;
+}
+
+.empty-watchlist-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+.empty-watchlist-content > h2 {
+  font-size: 3rem;
+}
+
+.empty-watchlist-content > button {
+  font-size: 1.5rem;
+}
+
+.header-content {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: flex-start; */
+  text-align: center;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.input-text {
+  color: #ffff;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.input-text:focus {
+  outline: none;
+}
+
+.user-avatar {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* ^ FEATURED CONTAINER */
+
+.featured-container {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+.featured-item {
+  display: flex;
+  text-align: left;
+  width: 40vw;
+}
+
+.imdb-logo-container-featured {
+  display: flex;
+  justify-content: left;
+}
+
+/* ^ MOVIE CONTAINER */
+
+.movie-poster {
+  width: 250px;
+  cursor: pointer;
+}
+
+.movie-poster:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+
+.movie-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em 0;
+}
+
+#movie-container {
+  position: relative;
+  margin: 2em;
+  display: grid;
+  text-align: center;
+  grid-auto-flow: column;
+  /* should, in theory, work without overflow-x */
+  overflow-x: scroll;
+}
+
+/* ^ MOVIE ITEM */
+
+.fa-circle-arrow-left {
+  font-size: 2rem;
+  position: absolute;
+  bottom: -80px;
+  left: 10px;
+  z-index: 1;
+}
+
+.fa-circle-arrow-right {
+  font-size: 2rem;
+  position: absolute;
+  bottom: -80px;
+  right: 10px;
+  z-index: 1;
+}
+
+.movie-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ^ BUTTONS */
+
+.btn {
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imdb-logo {
+  width: 40px;
+  margin-right: 1em;
+}
+
+.imdb-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ^ FOOTER */
+
+footer {
+  margin-top: 2em;
+  padding: 1em;
+  text-align: center;
+  /* background-color: var(--accent); */
+  color: #fff;
+  line-height: 1.5rem;
+}
+
+.tmdb-logo {
+  width: 200px;
+}
+
+/* ! WHATCHLIST CONTAINER */
+
+.watchlist-container {
+  display: grid;
+  grid-template: auto / auto auto;
+  gap: 1em;
+  max-width: 1000px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.watchlist-item {
+  border-bottom: 1px solid var(--accent);
+}
+
+.imdb-logo-container-watchlist {
+  display: flex;
+  align-items: center;
+}
+
+.providers-grid > img {
+  width: 60px;
+}
+
+.icon {
+  margin-right: 0.2em;
+}
+
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */
